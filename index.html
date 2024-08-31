@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="container mx-auto">
+    <header class="text-center mb-8">
+      <h1 class="text-4xl font-bold">Find Your Style</h1>
+      <p class="text-lg mt-2">Search for the latest clothing trends</p>
+    </header>
+
+    <div class="relative">
+      <input 
+        type="text" 
+        id="search-bar" 
+        class="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+        placeholder="Search for clothing..."
+      >
+      <div id="search-results" class="absolute left-0 w-full bg-white border border-gray-300 rounded-lg mt-2 max-h-64 overflow-y-auto shadow-lg hidden">
+        <!-- Search results will be displayed here -->
+      </div>
+    </div>
+
+    <div id="items-list" class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- All items will be displayed here -->
+    </div>
+
+    <div id="item-details" class="mt-8 p-6 bg-white rounded-lg shadow-lg hidden">
+      <!-- Detailed view of selected item will be displayed here -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
